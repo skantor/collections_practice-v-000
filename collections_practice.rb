@@ -50,5 +50,8 @@ def sum_array(arr)
 end 
 
 def add_s(arr)
-  [1,2].each_with_index.collect{|e,i| if }
+  fin = []
+  arr.each do |word|
+    if word != arr[1]
+      
 end 
