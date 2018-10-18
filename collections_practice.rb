@@ -53,5 +53,10 @@ def add_s(arr)
   fin = []
   arr.each do |word|
     if word != arr[1]
-      
+      word << "s"
+      fin << word 
+    end 
+  end 
+  fin[1] = arr[1]
+  fin
 end 
