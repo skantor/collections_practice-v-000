@@ -1,1 +1,54 @@
+def sort_array_asc(arr)
+  arr.sort
+end 
 
+def sort_array_desc(arr)
+  arr.sort.reverse 
+end
+
+def sort_array_char_count(arr)
+  arr.sort {|left, right| left.length <=> right.length} 
+end 
+
+def swap_elements_from_to(array, ind, dest)
+  save = array[dest]
+  array[dest] = array[ind]
+  array[ind] = save
+end
+
+def swap_elements(arr)
+  swap_elements_from_to(arr,1,2)
+  arr
+end 
+
+def reverse_array(arr)
+  copy = arr.reverse_each 
+  copy.to_a
+end 
+
+def kesha_maker(arr)
+  final = []
+  arr.each do |word|
+    word[2] = "$" 
+    final << word
+  end
+  final
+end 
+
+def find_a(arr)
+  fin = []
+  arr.each do |word|
+    if word.start_with?("a") == true 
+      fin << word 
+    end 
+  end 
+  fin
+end 
+
+def sum_array(arr)
+  arr.inject(:+)   
+end 
+
+def add_s(arr)
+  [1,2].each_with_index.collect{|e,i| puts element}
+end 
