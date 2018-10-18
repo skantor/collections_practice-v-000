@@ -57,6 +57,6 @@ def add_s(arr)
       fin << word 
     end 
   end 
-  fin[1] = arr[1]
+  fin.insert(1) = arr[1]
   fin
 end 
